@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyPassword Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to PyPassword Generator</h1>
+        <p>Generate strong, secure passwords with customizable options!</p>
+
+        <div class="form-group">
+            <label for="letters">Number of Letters:</label>
+            <input type="number" id="letters" min="0" value="4">
+        </div>
+        
+        <div class="form-group">
+            <label for="symbols">Number of Symbols:</label>
+            <input type="number" id="symbols" min="0" value="2">
+        </div>
+        
+        <div class="form-group">
+            <label for="numbers">Number of Numbers:</label>
+            <input type="number" id="numbers" min="0" value="2">
+        </div>
+
+        <button onclick="generatePassword()">Generate Password</button>
+
+        <div class="output">
+            <p><strong>Easy Password:</strong> <span id="easyPassword"></span></p>
+            <p><strong>Hard Password:</strong> <span id="hardPassword"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
